@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body ul {
+  padding-left: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body a {
+  text-decoration: none;
+}
+
+.titles {
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(60, 60, 207);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header-titles {
+  display: flex;
+}
+
+.date {
+  color: grey;
+  font-size: 12px;
+  opacity: 0.7;
+  align-self: center;
+}
+
+.header-list {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.header-list li:hover {
+  color: blue;
+}
+
+.currency-list {
+  display: flex;
+  gap: 10px;
+}
+
+.cur-main {
+  font-weight: 500;
+}
+
+.cur-submain {
+  color: grey;
+  opacity: 0.7;
+}
+
+.currency-btn {
+  background-color: transparent;
+  border: none;
+  color: grey;
+  opacity: 0.7;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.currency-btn:hover {
+  background-color: rgba(196, 181, 181, 0.274);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-main {
+  margin-right: 50px;
+}
+
+.header-aside {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header-img {
+  border-radius: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-aside__title {
+  color: blue;
+  margin: 0;
+}
+
+.input-titles {
+  color: blue;
+  display: flex;
+  gap: 15px;
+  padding-left: 0;
+}
+
+.random-find {
+  color:rgba(196, 181, 181, 0.808);
+  cursor: pointer;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group::before {
+  content: 'Logo';
+  left: -80px;
+  position: absolute;
+  bottom: 0;
+  font-size: 32px;
+}
+
+.main-banner {
+  width: 90%;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.header-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card:nth-child(3n+2) {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.card {
+  width: 30%;
+  border: none;
+}
+
+.card:nth-child(n+4) {
+  margin-top: 20px;
 }
